@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<%- include('layouts/head') -%>
+<body>
+<header>
+    <%- include('layouts/navbar2') -%>
+</header>
+
+<main>
+    <section class="container" style="margin-top: 140px; margin-bottom: 70px;">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-7">
+                <div class="card p-3">
+                    <% if(errors != null && errors.length > 0) {%>
+                        <ul class="list-group">
+                            <% for(var i = 0; i < errors.length; i++){ %>
+                                <li class="list-group-item list-group-item-danger">
+                                    <%= errors[i] %>
+                                </li>
+                            <% } %>
+                        </ul>
+                    <% } %>
+                    <h1 class="mb-3 cursive text-center">Register For Access</h1>
+                    <form action="/store/user" enctype="multipart/form-data" method="post">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" name="username" id="username" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" required>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" name="email" id="email" required>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="btn btn-outline-primary" type="submit">register now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<%- include('layouts/scripts') -%>
+</body>
+</html>

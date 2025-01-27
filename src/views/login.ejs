@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<%- include('layouts/head') -%>
+<body>
+<header>
+    <%- include('layouts/navbar2') -%>
+</header>
+
+<main>
+    <section class="container" style="margin-top: 140px; margin-bottom: 70px;">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5">
+                <div class="card p-3">
+                    <h1 class="mb-3 display-4 cursive text-center">Login</h1>
+                    <form action="/login/user" enctype="multipart/form-data" method="post">
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" name="username" id="username" required>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" required>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="btn btn-outline-info" type="submit">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<%- include('layouts/scripts') -%>
+</body>
+</html>
