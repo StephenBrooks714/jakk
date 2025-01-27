@@ -20,5 +20,7 @@ router.post("/store/listing", cache(2), listingController.storeListing);
 router.get("/singleListing/:id", cache(2), listingController.singleListingPage);
 router.get("/listings", cache(2), listingController.listingData);
 router.get("/delete/listing/:id", cache(2), listingController.deleteListing);
+// search functionality
+router.post("/searchTerm", cache(2), listingController.searchInfo);
 
 module.exports = router;

@@ -13,10 +13,6 @@ const listingSchema = new Schema({
     contact: String,
     email: String,
     image: String,
-    image2: {
-        type: String,
-        required: false
-    },
     datePosted: {
         type: Date,
         default: new Date()
