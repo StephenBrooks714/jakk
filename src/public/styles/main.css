@@ -1,9 +1,9 @@
 .home-intro {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://images.unsplash.com/photo-1628133287836-40bd5453bed1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    url("https://learndemy.net/wp-content/uploads/2023/11/Social-Housing-Management.jpg")
     no-repeat center center fixed;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
     color: white;
 }
 .fadeInDown {
@@ -11,7 +11,10 @@
     animation-duration: 1s;
     animation-fill-mode: both;
 }
-
+.bg-green-nav-shadow {
+    background: linear-gradient(rgba(60, 179, 113, 0.9), rgba(0, 0, 0, 0.9));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -27,4 +30,12 @@
     .nav-dark {
         background-color: black !important;
     }
+}
+
+.bg-section {
+    background: url("https://static.vecteezy.com/system/resources/previews/022/429/680/non_2x/abstract-colorful-low-poly-geometric-shapes-background-png.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
 }

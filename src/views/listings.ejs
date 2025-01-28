@@ -6,9 +6,9 @@
 
 <main>
     <section class="container my-5 py-5">
-        <div class="row justify-content-center mb-5 mt-3">
-            <div class="col-md-5 text-center">
-                <p class="mb-3 lead fw-bold">Filter Listings</p>
+        <div class="row justify-content-center mb-5 mt-5">
+            <div class="col-md-7 text-center">
+                <p class="mb-3 lead fw-bold">Search Listings</p>
                 <form action="/search" method="post" class="d-flex align-items-center">
                     <input type="search" name="searchTerm" class="form-control" placeholder="Search ...."><i class="bi bi-binoculars h4"></i>
                 </form>
@@ -46,6 +46,8 @@
         </div>
     </section>
 </main>
+
+<%- include('layouts/footer') -%>
 
 <%- include('layouts/scripts') -%>
 </body>

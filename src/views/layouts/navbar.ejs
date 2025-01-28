@@ -11,11 +11,25 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/listings">Listings</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Our Team</a></li>
+                        <li><a class="dropdown-item" href="#">Programs</a></li>
+                        <li><a class="dropdown-item" href="/listings">Listings</a></li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Involvement
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Get Listed</a></li>
+                        <li><a class="dropdown-item" href="#">Assistance</a></li>
+                        <li><a class="dropdown-item" href="#">Community</a></li>
+                    </ul>
                 </li>
                 <% if(loggedIn) { %>
                     <li class="nav-item">
