@@ -28,7 +28,8 @@
 
 @media(max-width: 768px) {
     .nav-dark {
-        background-color: black !important;
+        background: linear-gradient(rgba(60, 179, 113, 0.9), rgba(0, 0, 0, 0.9));
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     }
 }
 
