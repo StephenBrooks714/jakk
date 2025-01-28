@@ -20,7 +20,7 @@ const listingData = async (req, res) => {
 }
 
 const singleListingPage = async (req, res) => {
-    const listData = await SingleListing.findById(req.params.id).populate('userid')
+    const listData = await SingleListing.findById(req.params.id).populate('userid').limit(10);
     res.render("singleListing", {
         title: "A Post about the blog.",
         listData

@@ -6,8 +6,8 @@
 
 <main>
     <section class="container my-5 py-5">
-        <div class="row justify-content-center mb-5 mt-3">
-            <div class="col-md-5 text-center">
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-5 mb-4 text-center">
                 <p class="mb-3 lead fw-bold">Filter Listings</p>
                 <form action="/search" method="post" class="d-flex align-items-center">
                     <input type="search" name="searchTerm" class="form-control" placeholder="Search ...."><i class="bi bi-binoculars h4"></i>
